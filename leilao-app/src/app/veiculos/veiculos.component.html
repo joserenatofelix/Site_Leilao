@@ -1,0 +1,8 @@
+<div class="veiculos-container">
+    <h1>Veículos Disponíveis</h1>
+    <div *ngFor="let veiculo of veiculos" class="veiculo-card">
+      <h3>{{ veiculo.tipo }} - {{ veiculo.modelo }}</h3>
+      <p>Preço: {{ veiculo.preco | currency }}</p>
+    </div>
+  </div>
+  

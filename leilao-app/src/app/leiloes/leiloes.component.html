@@ -1,0 +1,8 @@
+<div class="leiloes-container">
+    <h1>Leilões Disponíveis</h1>
+    <div *ngFor="let leilao of leiloes" class="leilao-card">
+      <h3>{{ leilao.item }} - {{ leilao.descricao }}</h3>
+      <p>Valor Inicial: {{ leilao.valorInicial | currency }}</p>
+    </div>
+  </div>
+  

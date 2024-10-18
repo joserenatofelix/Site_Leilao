@@ -1,0 +1,8 @@
+<div class="imoveis-container">
+    <h1>Imóveis Disponíveis</h1>
+    <div *ngFor="let imovel of imoveis" class="imovel-card">
+      <h3>{{ imovel.tipo }} - {{ imovel.descricao }}</h3>
+      <p>Preço: {{ imovel.preco | currency }}</p>
+    </div>
+  </div>
+  
